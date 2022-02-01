@@ -72,7 +72,10 @@ namespace FolderNotify
         {
             try
             {
-                FileSystemWatcher watcher = new FileSystemWatcher(targetPath, "*.uut.html");
+                string filter = "*";
+                if(!string.IsNullOrEmpty(Properties.Settings.Default.FileFilter))
+                    filter = Properties.Settings.Default.FileFilter;
+        FileSystemWatcher watcher = new FileSystemWatcher(targetPath, filter);
                 watcher.Created += Watcher_Created;
                 watcher.NotifyFilter = NotifyFilters.Attributes
                                     | NotifyFilters.CreationTime

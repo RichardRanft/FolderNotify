@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectdatabase version="10">
+  <linkdatabase>
+    <link>
+      <topicid>!!CLASSES_FolderNotify</topicid>
+      <displaystring>Classes</displaystring>
+      <target id="html">../output/!!CLASSES_FolderNotify.html</target>
+      <target id="pdf">pdf://21@FolderNotify.pdf</target>
+    </link>
+    <link>
+      <topicid>!!CLASSES_FolderNotify.Properties</topicid>
+      <displaystring>Classes</displaystring>
+      <target id="html">../output/!!CLASSES_FolderNotify_Properties.html</target>
+      <target id="pdf">pdf://12@FolderNotify.pdf</target>
+    </link>
+    <link>
+      <topicid>!!FILES</topicid>
+      <displaystring>Files</displaystring>
+      <target id="html">../output/!!FILES.html</target>
+      <target id="pdf">pdf://40@FolderNotify.pdf</target>
+    </link>
+    <link>
+      <topicid>!!MEMBERTYPE_Methods_FolderNotify.AddPath</topicid>
+      <displaystring>Methods</displaystring>
+      <target id="html">../output/!!MEMBERTYPE_Methods_FolderNotify_AddPath.html</target>
+      <target id="pdf">pdf://26@FolderNotify.pdf</target>
+    </link>
+    <link>
+      <topicid>!!MEMBERTYPE_Methods_FolderNotify.Form1</topicid>
+      <displaystring>Methods</displaystring>
+      <target id="html">../output/!!MEMBERTYPE_Methods_FolderNotify_Form1.html</target>
+      <target id="pdf">pdf://32@FolderNotify.pdf</target>
+    </link>
+    <link>
+      <topicid>!!MEMBERTYPE_Methods_FolderNotify.Verify</topicid>
+      <displaystring>Methods</displaystring>
+      <target id="html">../output/!!MEMBERTYPE_Methods_FolderNotify_Verify.html</target>
+      <target id="pdf">pdf://38@FolderNotify.pdf</target>
+    </link>
+    <link>
+      <topicid>!!MEMBERTYPE_Properties_FolderNotify.AddPath</topicid>
+      <displaystring>Properties</displaystring>
+      <target id="html">../output/!!MEMBERTYPE_Properties_FolderNotify_AddPath.html</target>
+      <target id="pdf">pdf://27@FolderNotify.pdf</target>
+    </link>
+    <link>
+      <topicid>!!MEMBERTYPE_Properties_FolderNotify.Properties.Resources</topicid>
+      <displaystring>Properties</displaystring>
+      <target id="html">../output/!!MEMBERTYPE_Properties_FolderNotify_Properties_Resources.html</target>
+      <target id="pdf">pdf://17@FolderNotify.pdf</target>
+    </link>
+    <link>
+      <topicid>!!MEMBERTYPE_Properties_FolderNotify.Properties.Settings</topicid>
+      <displaystring>Properties</displaystring>
+      <target id="html">../output/!!MEMBERTYPE_Properties_FolderNotify_Properties_Settings.html</target>
+      <target id="pdf">pdf://20@FolderNotify.pdf</target>
+    </link>
+    <link>
+      <topicid>!!MEMBERTYPE_Properties_FolderNotify.Verify</topicid>
+      <displaystring>Properties</displaystring>
+      <target id="html">../output/!!MEMBERTYPE_Properties_FolderNotify_Verify.html</target>
+      <target id="pdf">pdf://39@FolderNotify.pdf</target>
+    </link>
+    <link>
+      <topicid>!!SYMREF</topicid>
+      <displaystring>Symbol Reference</displaystring>
+      <target id="pdf">pdf://3@FolderNotify.pdf</target>
+    </link>
+    <link>
+      <topicid>.NETFramework,Version=v4.7.2.AssemblyAttributes.cs</topicid>
+      <displaystring>.NETFramework,Version=v4.7.2.AssemblyAttributes.cs</displaystring>
+      <target id="html">../output/_NETFramework,Version=v4_7_2_AssemblyAttributes_cs.html</target>
+      <target id="pdf">pdf://41@FolderNotify.pdf</target>
+    </link>
+    <link>
+      <topicid>AddPath.Designer.cs</topicid>
+      <displaystring>AddPath.Designer.cs</displaystring>
+      <target id="html">../output/AddPath_Designer_cs.html</target>
+      <target id="pdf">pdf://22@FolderNotify.pdf</target>
+    </link>
+    <link>
+      <topicid>AddPath.cs</topicid>
+      <displaystring>AddPath.cs</displaystring>
+      <target id="html">../output/AddPath_cs.html</target>
+      <target id="pdf">pdf://42@FolderNotify.pdf</target>
+    </link>
+    <link>
+      <topicid>AssemblyInfo.cs</topicid>
+      <displaystring>AssemblyInfo.cs</displaystring>
+      <target id="html">../output/AssemblyInfo_cs.html</target>
+      <target id="pdf">pdf://43@FolderNotify.pdf</target>
+    </link>
+    <link>
+      <topicid>FolderNotify</topicid>
+      <displaystring>FolderNotify Namespace</displaystring>
+      <target id="html">../output/FolderNotify.html</target>
+      <target id="pdf">pdf://4@FolderNotify.pdf</target>
+    </link>
+    <link>
+      <topicid>FolderNotify.AddPath</topicid>
+      <displaystring>AddPath Class</displaystring>
+      <target id="html">../output/FolderNotify_AddPath.html</target>
+      <target id="pdf">pdf://6@FolderNotify.pdf</target>
+    </link>
+    <link>
+      <topicid>FolderNotify.AddPath.AddPath</topicid>
+      <displaystring>AddPath.AddPath Constructor</displaystring>
+      <target id="html">../output/FolderNotify_AddPath_AddPath.html</target>
+      <target id="pdf">pdf://23@FolderNotify.pdf</target>
+    </link>
+    <link>
+      <topicid>FolderNotify.AddPath.Dispose@bool</topicid>
+      <displaystring>AddPath.Dispose Method</displaystring>
+      <target id="html">../output/FolderNotify_AddPath_Dispose@bool.html</target>
+      <target id="pdf">pdf://24@FolderNotify.pdf</target>
+    </link>
+    <link>
+      <topicid>FolderNotify.AddPath.SelectedPath</topicid>
+      <displaystring>AddPath.SelectedPath Property</displaystring>
+      <target id="html">../output/FolderNotify_AddPath_SelectedPath.html</target>
+      <target id="pdf">pdf://25@FolderNotify.pdf</target>
+    </link>
+    <link>
+      <topicid>FolderNotify.Form1</topicid>
+      <displaystring>Form1 Class</displaystring>
+      <target id="html">../output/FolderNotify_Form1.html</target>
+      <target id="pdf">pdf://7@FolderNotify.pdf</target>
+    </link>
+    <link>
+      <topicid>FolderNotify.Form1.Dispose@bool</topicid>
+      <displaystring>Form1.Dispose Method</displaystring>
+      <target id="html">../output/FolderNotify_Form1_Dispose@bool.html</target>
+      <target id="pdf">pdf://30@FolderNotify.pdf</target>
+    </link>
+    <link>
+      <topicid>FolderNotify.Form1.Form1</topicid>
+      <displaystring>Form1.Form1 Constructor</displaystring>
+      <target id="html">../output/FolderNotify_Form1_Form1.html</target>
+      <target id="pdf">pdf://29@FolderNotify.pdf</target>
+    </link>
+    <link>
+      <topicid>FolderNotify.Form1.updateTextbox@string</topicid>
+      <displaystring>Form1.updateTextbox Method</displaystring>
+      <target id="html">../output/FolderNotify_Form1_updateTextbox@string.html</target>
+      <target id="pdf">pdf://31@FolderNotify.pdf</target>
+    </link>
+    <link>
+      <topicid>FolderNotify.Program</topicid>
+      <displaystring>Program Class</displaystring>
+      <target id="html">../output/FolderNotify_Program.html</target>
+      <target id="pdf">pdf://8@FolderNotify.pdf</target>
+    </link>
+    <link>
+      <topicid>FolderNotify.Properties</topicid>
+      <displaystring>FolderNotify.Properties Namespace</displaystring>
+      <target id="html">../output/FolderNotify_Properties.html</target>
+      <target id="pdf">pdf://5@FolderNotify.pdf</target>
+    </link>
+    <link>
+      <topicid>FolderNotify.Properties.Resources</topicid>
+      <displaystring>Resources Class</displaystring>
+      <target id="html">../output/FolderNotify_Properties_Resources.html</target>
+      <target id="pdf">pdf://10@FolderNotify.pdf</target>
+    </link>
+    <link>
+      <topicid>FolderNotify.Properties.Resources.Culture</topicid>
+      <displaystring>Resources.Culture Property</displaystring>
+      <target id="html">../output/FolderNotify_Properties_Resources_Culture.html</target>
+      <target id="pdf">pdf://15@FolderNotify.pdf</target>
+    </link>
+    <link>
+      <topicid>FolderNotify.Properties.Resources.ResourceManager</topicid>
+      <displaystring>Resources.ResourceManager Property</displaystring>
+      <target id="html">../output/FolderNotify_Properties_Resources_ResourceManager.html</target>
+      <target id="pdf">pdf://16@FolderNotify.pdf</target>
+    </link>
+    <link>
+      <topicid>FolderNotify.Properties.Resources.Resources</topicid>
+      <displaystring>Resources.Resources Constructor</displaystring>
+      <target id="html">../output/FolderNotify_Properties_Resources_Resources.html</target>
+      <target id="pdf">pdf://14@FolderNotify.pdf</target>
+    </link>
+    <link>
+      <topicid>FolderNotify.Properties.Settings</topicid>
+      <displaystring>Settings Class</displaystring>
+      <target id="html">../output/FolderNotify_Properties_Settings.html</target>
+      <target id="pdf">pdf://11@FolderNotify.pdf</target>
+    </link>
+    <link>
+      <topicid>FolderNotify.Properties.Settings.Default</topicid>
+      <displaystring>Settings.Default Property</displaystring>
+      <target id="html">../output/FolderNotify_Properties_Settings_Default.html</target>
+      <target id="pdf">pdf://19@FolderNotify.pdf</target>
+    </link>
+    <link>
+      <topicid>FolderNotify.Verify</topicid>
+      <displaystring>Verify Class</displaystring>
+      <target id="html">../output/FolderNotify_Verify.html</target>
+      <target id="pdf">pdf://9@FolderNotify.pdf</target>
+    </link>
+    <link>
+      <topicid>FolderNotify.Verify.Dispose@bool</topicid>
+      <displaystring>Verify.Dispose Method</displaystring>
+      <target id="html">../output/FolderNotify_Verify_Dispose@bool.html</target>
+      <target id="pdf">pdf://36@FolderNotify.pdf</target>
+    </link>
+    <link>
+      <topicid>FolderNotify.Verify.Verify</topicid>
+      <displaystring>Verify.Verify Constructor</displaystring>
+      <target id="html">../output/FolderNotify_Verify_Verify.html</target>
+      <target id="pdf">pdf://35@FolderNotify.pdf</target>
+    </link>
+    <link>
+      <topicid>FolderNotify.Verify.WatchPath</topicid>
+      <displaystring>Verify.WatchPath Property</displaystring>
+      <target id="html">../output/FolderNotify_Verify_WatchPath.html</target>
+      <target id="pdf">pdf://37@FolderNotify.pdf</target>
+    </link>
+    <link>
+      <topicid>FolderNotify.csproj</topicid>
+      <displaystring>FolderNotify.csproj</displaystring>
+      <target id="html">../output/FolderNotify_csproj.html</target>
+      <target id="pdf">pdf://44@FolderNotify.pdf</target>
+    </link>
+    <link>
+      <topicid>FolderNotify.csproj.FileListAbsolute.txt</topicid>
+      <displaystring>FolderNotify.csproj.FileListAbsolute.txt</displaystring>
+      <target id="html">../output/FolderNotify_csproj_FileListAbsolute_txt.html</target>
+      <target id="pdf">pdf://1@FolderNotify.pdf</target>
+    </link>
+    <link>
+      <topicid>FolderNotify.sln</topicid>
+      <displaystring>FolderNotify.sln</displaystring>
+      <target id="html">../output/FolderNotify_sln.html</target>
+      <target id="pdf">pdf://45@FolderNotify.pdf</target>
+    </link>
+    <link>
+      <topicid>Form1.Designer.cs</topicid>
+      <displaystring>Form1.Designer.cs</displaystring>
+      <target id="html">../output/Form1_Designer_cs.html</target>
+      <target id="pdf">pdf://28@FolderNotify.pdf</target>
+    </link>
+    <link>
+      <topicid>Form1.cs</topicid>
+      <displaystring>Form1.cs</displaystring>
+      <target id="html">../output/Form1_cs.html</target>
+      <target id="pdf">pdf://46@FolderNotify.pdf</target>
+    </link>
+    <link>
+      <topicid>Program.cs</topicid>
+      <displaystring>Program.cs</displaystring>
+      <target id="html">../output/Program_cs.html</target>
+      <target id="pdf">pdf://33@FolderNotify.pdf</target>
+    </link>
+    <link>
+      <topicid>Resources.Designer.cs</topicid>
+      <displaystring>Resources.Designer.cs</displaystring>
+      <target id="html">../output/Resources_Designer_cs.html</target>
+      <target id="pdf">pdf://13@FolderNotify.pdf</target>
+    </link>
+    <link>
+      <topicid>Settings.Designer.cs</topicid>
+      <displaystring>Settings.Designer.cs</displaystring>
+      <target id="html">../output/Settings_Designer_cs.html</target>
+      <target id="pdf">pdf://18@FolderNotify.pdf</target>
+    </link>
+    <link>
+      <topicid>Verify.Designer.cs</topicid>
+      <displaystring>Verify.Designer.cs</displaystring>
+      <target id="html">../output/Verify_Designer_cs.html</target>
+      <target id="pdf">pdf://34@FolderNotify.pdf</target>
+    </link>
+    <link>
+      <topicid>Verify.cs</topicid>
+      <displaystring>Verify.cs</displaystring>
+      <target id="html">../output/Verify_cs.html</target>
+      <target id="pdf">pdf://47@FolderNotify.pdf</target>
+    </link>
+    <link>
+      <topicid>watchpathdata.xml</topicid>
+      <displaystring>watchpathdata.xml</displaystring>
+      <target id="html">../output/watchpathdata_xml.html</target>
+      <target id="pdf">pdf://2@FolderNotify.pdf</target>
+    </link>
+  </linkdatabase>
+  <classinformation>
+    <namespace name="FolderNotify" language="2">
+      <namespace name="Properties" language="2">
+        <class name="Resources" language="2" type="0" using="">
+          <field name="resourceCulture"/>
+          <field name="resourceMan"/>
+          <property name="Culture" info="global::System.Globalization.CultureInfo"/>
+          <property name="ResourceManager" info="global::System.Resources.ResourceManager"/>
+          <method name="Resources"/>
+        </class>
+        <class name="Settings" language="2" type="0" using="">
+          <ancestor name="global::System.Configuration.ApplicationSettingsBase"/>
+          <field name="defaultInstance"/>
+          <property name="Default" info="Settings"/>
+        </class>
+      </namespace>
+      <class name="AddPath" language="2" type="0" using="">
+        <ancestor name="Form"/>
+        <field name="btnAddPath"/>
+        <field name="btnCancel"/>
+        <field name="components"/>
+        <field name="label1"/>
+        <field name="tbxPath"/>
+        <property name="SelectedPath" info="string"/>
+        <method name="AddPath"/>
+        <method name="Dispose"/>
+        <method name="InitializeComponent"/>
+        <method name="tbxPath_TextChanged"/>
+      </class>
+      <class name="Form1" language="2" type="0" using="">
+        <ancestor name="Form"/>
+        <field name="btnAddPath"/>
+        <field name="cmsPathMenu"/>
+        <field name="components"/>
+        <field name="dgvPathDisplay"/>
+        <field name="exitToolStripMenuItem"/>
+        <field name="fileToolStripMenuItem"/>
+        <field name="label1"/>
+        <field name="label2"/>
+        <field name="m_activeWatchers"/>
+        <field name="m_addPathForm"/>
+        <field name="m_currentRow"/>
+        <field name="m_verifyRemove"/>
+        <field name="m_watchPaths"/>
+        <field name="menuStrip1"/>
+        <field name="niTrayIcon"/>
+        <field name="panel1"/>
+        <field name="panel2"/>
+        <field name="panel3"/>
+        <field name="panel4"/>
+        <field name="removeWatchToolStripMenuItem"/>
+        <field name="splitContainer1"/>
+        <field name="tbxPathChangeLog"/>
+        <field name="toggleEnabledToolStripMenuItem"/>
+        <method name="Dispose"/>
+        <method name="Form1"/>
+        <method name="Form1_Resize"/>
+        <method name="InitializeComponent"/>
+        <method name="Watcher_Created"/>
+        <method name="btnAddPath_Click"/>
+        <method name="createWatcher"/>
+        <method name="dgvPathDisplay_MouseUp"/>
+        <method name="displayWatchedPaths"/>
+        <method name="exitToolStripMenuItem_Click"/>
+        <method name="loadWatchPaths"/>
+        <method name="niTrayIcon_MouseDoubleClick"/>
+        <method name="removeWatchToolStripMenuItem_Click"/>
+        <method name="startPathWatches"/>
+        <method name="toggleEnabledToolStripMenuItem_Click"/>
+        <method name="updateTextbox"/>
+      </class>
+      <class name="Program" language="2" type="0" using="System,System.Collections.Generic,System.Linq,System.Threading.Tasks,System.Windows.Forms">
+        <method name="Main"/>
+      </class>
+      <class name="Verify" language="2" type="0" using="">
+        <ancestor name="Form"/>
+        <field name="btnCancelRemove"/>
+        <field name="btnProceedRemove"/>
+        <field name="components"/>
+        <field name="label1"/>
+        <field name="label2"/>
+        <field name="lblWatchPath"/>
+        <property name="WatchPath" info="string"/>
+        <method name="Dispose"/>
+        <method name="InitializeComponent"/>
+        <method name="Verify"/>
+      </class>
+    </namespace>
+  </classinformation>
+</projectdatabase>

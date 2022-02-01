@@ -75,7 +75,7 @@ namespace FolderNotify
                 string filter = "*";
                 if(!string.IsNullOrEmpty(Properties.Settings.Default.FileFilter))
                     filter = Properties.Settings.Default.FileFilter;
-        FileSystemWatcher watcher = new FileSystemWatcher(targetPath, filter);
+                FileSystemWatcher watcher = new FileSystemWatcher(targetPath, filter);
                 watcher.Created += Watcher_Created;
                 watcher.NotifyFilter = NotifyFilters.Attributes
                                     | NotifyFilters.CreationTime
@@ -85,7 +85,6 @@ namespace FolderNotify
                                     | NotifyFilters.LastWrite
                                     | NotifyFilters.Security
                                     | NotifyFilters.Size;
-                watcher.Filter = "*";
                 watcher.IncludeSubdirectories = true;
                 watcher.EnableRaisingEvents = true;
                 return watcher;

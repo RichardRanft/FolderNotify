@@ -230,7 +230,9 @@ namespace FolderNotify
                 {
                     if (!m_activeWatchers.ContainsKey(path))
                     {
-                        m_activeWatchers.Add(path, createWatcher(path));
+                        FileSystemWatcher watch = createWatcher(path);
+                        if (watch != null)
+                            m_activeWatchers.Add(path, watch);
                     }
                 }
             }

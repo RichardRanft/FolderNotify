@@ -50,6 +50,7 @@
             this.cmsPathMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toggleEnabledToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.removeWatchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnRefresh = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -97,6 +98,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btnRefresh);
             this.panel1.Controls.Add(this.btnAddPath);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 413);
@@ -222,6 +224,16 @@
             this.removeWatchToolStripMenuItem.Text = "Remove watch";
             this.removeWatchToolStripMenuItem.Click += new System.EventHandler(this.removeWatchToolStripMenuItem_Click);
             // 
+            // btnRefresh
+            // 
+            this.btnRefresh.Location = new System.Drawing.Point(94, 7);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(119, 23);
+            this.btnRefresh.TabIndex = 1;
+            this.btnRefresh.Text = "Refresh Watchers";
+            this.btnRefresh.UseVisualStyleBackColor = true;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -274,6 +286,7 @@
         private System.Windows.Forms.ContextMenuStrip cmsPathMenu;
         private System.Windows.Forms.ToolStripMenuItem toggleEnabledToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem removeWatchToolStripMenuItem;
+        private System.Windows.Forms.Button btnRefresh;
     }
 }
 

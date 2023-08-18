@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using System.Windows.Forms;
+using System.IO.Ports;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace FolderNotify
 {
@@ -72,22 +74,25 @@ namespace FolderNotify
         {
             try
             {
-                string filter = "*";
-                if(!string.IsNullOrEmpty(Properties.Settings.Default.FileFilter))
-                    filter = Properties.Settings.Default.FileFilter;
-                FileSystemWatcher watcher = new FileSystemWatcher(targetPath, filter);
-                watcher.Created += Watcher_Created;
-                watcher.NotifyFilter = NotifyFilters.Attributes
-                                    | NotifyFilters.CreationTime
-                                    | NotifyFilters.DirectoryName
-                                    | NotifyFilters.FileName
-                                    | NotifyFilters.LastAccess
-                                    | NotifyFilters.LastWrite
-                                    | NotifyFilters.Security
-                                    | NotifyFilters.Size;
-                watcher.IncludeSubdirectories = true;
-                watcher.EnableRaisingEvents = true;
-                return watcher;
+                if (!m_activeWatchers.ContainsKey(targetPath))
+                {
+                    string filter = "*";
+                    if (!string.IsNullOrEmpty(Properties.Settings.Default.FileFilter))
+                        filter = Properties.Settings.Default.FileFilter;
+                    FileSystemWatcher watcher = new FileSystemWatcher(targetPath, filter);
+                    watcher.Created += watcher_FSEntryCreated;
+                    watcher.NotifyFilter = NotifyFilters.Attributes
+                                        | NotifyFilters.CreationTime
+                                        | NotifyFilters.DirectoryName
+                                        | NotifyFilters.FileName
+                                        | NotifyFilters.LastAccess
+                                        | NotifyFilters.LastWrite
+                                        | NotifyFilters.Security
+                                        | NotifyFilters.Size;
+                    watcher.IncludeSubdirectories = true;
+                    watcher.EnableRaisingEvents = true;
+                    return watcher;
+                }
             }
             catch(Exception ex)
             {
@@ -96,26 +101,43 @@ namespace FolderNotify
             return null;
         }
 
-        private void Watcher_Created(object sender, FileSystemEventArgs e)
+        private void watcher_FSEntryCreated(object sender, FileSystemEventArgs e)
         {
             if (e.ChangeType != WatcherChangeTypes.Created)
                 return;
-            updateTextbox(string.Format("{0} - Created : {1}", DateTime.Now.ToString(), e.FullPath));
+            updateTextbox(DateTime.Now, e.FullPath);
         }
 
-        public void updateTextbox(string text)
+        public void updateTextbox(DateTime time, string path)
         {
             if (tbxPathChangeLog.InvokeRequired)
             {
                 // Call this same method but append THREAD2 to the text
-                Action safeWrite = delegate { updateTextbox($"{text}"); };
+                Action safeWrite = delegate { updateTextbox(time, $"{path}"); };
                 tbxPathChangeLog.Invoke(safeWrite);
             }
             else
             {
-                tbxPathChangeLog.AppendText(text + Environment.NewLine);
+                string text = string.Format("{0} - {1}{2}", time.ToString(), path, Environment.NewLine);
+                tbxPathChangeLog.Text = tbxPathChangeLog.Text.Insert(0, text);
                 niTrayIcon.ShowBalloonTip(1500, "Path Created", text, ToolTipIcon.Info);
             }
+        }
+
+        public Tuple<DateTime, string> getLogEntry(string line)
+        {
+            string time = line.Substring(0, line.IndexOf('-')).Trim();
+            string msg = line.Substring(line.IndexOf('-') + 1).Trim();
+            DateTime current = DateTime.Now;
+            try
+            {
+                current = DateTime.Parse(time);
+            }
+            catch
+            {
+                return null;
+            }
+            return new Tuple<DateTime, string>(current, msg);
         }
 
         private void Form1_Resize(object sender, EventArgs e)
@@ -183,7 +205,7 @@ namespace FolderNotify
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            System.Windows.Forms.Application.Exit();
         }
 
         private void dgvPathDisplay_MouseUp(object sender, MouseEventArgs e)
@@ -267,6 +289,14 @@ namespace FolderNotify
                 MessageBox.Show("Error writing stored paths : " + ex.Message, "Error Writing XML");
             }
             displayWatchedPaths();
+        }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            List<string> keys = new List<string>(m_activeWatchers.Keys);
+            foreach (string key in keys)
+                m_activeWatchers.Remove(key);
+            startPathWatches();
         }
     }
 }
